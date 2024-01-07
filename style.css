@@ -1,0 +1,60 @@
+/* :root{
+    --yellow: rgb(250, 235, 102);
+    --blu:rgb(10, 190, 235);
+    --red :rgb(255, 0, 0);
+} */
+
+:root{--red: rgb(227, 18, 49);
+      --yellow: rgb(245, 218, 15);
+      --blu : rgb(23, 65, 156);
+
+}
+body{
+    background-color: var(--blu);
+    color: var(--yellow)
+}
+
+@font-face {
+    font-family: mario;
+    src: url(./mario.TTF);
+}
+
+h1{
+    font-family: mario;
+    text-shadow: 2px 2px black;
+
+}
+
+.btn-custom{
+    background-color: var(--blu);
+    border: 3px solid var(--red);
+    color: var(--yellow);
+    width: 300px;
+    height: 110px;
+    font-weight: 700;
+    font-size: 30px;
+    transition: 0.5s ;
+    border-radius: 20px;
+
+}
+
+.btn-custom:hover{
+    background-color: var(--yellow);
+    border: 2px solid var(--red);
+    color: var(--blu);
+    border-radius: 20px;
+}
+
+.card-custom{
+    height: 100px;
+    border: 3px solid var(--red);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.icon{
+    cursor: pointer;
+}

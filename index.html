@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RUBRICA</title>
+    <link rel="shortcut icon" href="./marioo.jpg" type="image/x-icon">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css Bootstrap -->      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+       <!-- css Custom -->
+       <link rel="stylesheet" href="./style.css">
+    </head>
+  <body>
+    <h1 class="text-center my-5 display-3">Rubrica</h1>
+<!-- 
+Struttura Bottoni e input -->
+    <section class="container-fluid">
+        <div class="row">
+            <!-- BOTTONE MOSTRA/RUBRICA -->
+            <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center my-4">
+                
+                <button class="btn-custom" id="showContactsBtn">mostra rubrica</button>
+            
+            </div>
+
+            <!-- NOME E  NUMERO CONTATTO -->
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                <div class="input-group mb-3">
+                    <input id="nameInput" type="text" class="form-control" placeholder="Nome Contatto" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                    <input id="numberInput" type="number" class="form-control" placeholder="Numero Contatto" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+
+
+            </div>
+
+
+            <!-- bottoni aggiungi rimuovi contatto -->
+            <div class="col-12 col-lg-3 d-flex flex-column align-items-center">
+
+                <button class="btn-custom my-3" id="addContactBtn">Aggiungi contatto</button>
+                <button class="btn-custom my-3"id="removeContactBtn">RIMUOVI COMNTATTO</button>
+                <button class="btn-custom my-3">CERCA CONTATTO</button>
+
+            </div>
+
+
+        </div>
+    </section>
+    
+    <!-- STRUTTURA CONTATTI -->
+    <section class="container">
+        <div class="row justify-content-center my-5">
+            <div class="col-12 col-lg-8 my-3" id="cardsWrapper">
+               
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+    <!-- SCRIPT COLLEGAMENTO JAVASRIPT -->
+    <script src="./main.js"></script>
+</body>
+</html>
